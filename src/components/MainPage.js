@@ -55,6 +55,21 @@ class MainPage extends Component {
 			}
 		];
 
+		const shelves = [
+			{
+				name: "Currently Reading",
+				books: currentlyReading
+			},
+			{
+				name: "Want to Read",
+				books: wantToRead
+			},
+			{
+				name: "Read",
+				books: readPreviously
+			},
+		];
+
 		return (
 			<div className="list-books">
 				<div className="list-books-title">
@@ -62,18 +77,13 @@ class MainPage extends Component {
 				</div>
 				<div className="list-books-content">
 					<div>
-						<Shelf
-							name="Currently Reading"
-							books={currentlyReading}
-						/>
-						<Shelf
-							name="Want to Read"
-							books={wantToRead}
-						/>
-						<Shelf
-							name="Read"
-							books={readPreviously}
-						/>
+						{shelves.map(shelf => (
+							<Shelf
+								key={shelf.name.split(" ").join("").toLowerCase()}
+								name={shelf.name}
+								books={shelf.books}
+							/>
+						))}
 					</div>
 				</div>
 				<div className="open-search">
