@@ -106,7 +106,7 @@ App
 
 -MainPage
 --Shelf (Currently Reading, Want to Read, Read)
----BookDetails
+---Book
 ----BookActions
 --NavButton
 
@@ -114,7 +114,7 @@ App
 --SearchBar
 ---NavButton
 --Shelf (None)
----BookDetails
+---Book
 ----BookActions
 
 
