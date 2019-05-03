@@ -90,3 +90,57 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This repository is the starter code for _all_ Udacity students. Therefore, we most likely will not accept pull requests.
 
 For details, check out [CONTRIBUTING.md](CONTRIBUTING.md).
+
+
+
+
+
+
+
+
+# Planning
+
+## Component Hierarchy
+
+App
+
+-MainPage
+--Shelf (Currently Reading, Want to Read, Read)
+---BookDetails
+----BookActions
+--NavButton
+
+-SearchPage
+--SearchBar
+---NavButton
+--Shelf (None)
+---BookDetails
+----BookActions
+
+
+## Component Data
+
+
+SearchPage
+- All books in 'None' shelf
+
+SearchBar
+- query
+
+BooksList
+- List of books to show
+
+BookDetails
+- Title
+- Author
+- Image
+- Shelf
+
+Shelf
+- Name
+- List of books to show
+
+
+
+
+
