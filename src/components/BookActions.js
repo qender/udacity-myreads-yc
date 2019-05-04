@@ -2,7 +2,7 @@ import React from 'react';
 
 const BookActions = (props) => (
 	<div className="book-shelf-changer">
-		<select>
+		<select onChange={(e) => props.updateBookShelf(e.target.value)}>
 			<option value="move" disabled>Move to...</option>
 			<option value="currentlyReading">Currently Reading</option>
 			<option value="wantToRead">Want to Read</option>

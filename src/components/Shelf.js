@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Book from "./Book";
+import BooksGrid from "./BooksGrid";
+
 
 class Shelf extends Component {
 	render() {
@@ -7,16 +8,7 @@ class Shelf extends Component {
 			<div className="bookshelf">
 				<h2 className="bookshelf-title">{this.props.name}</h2>
 				<div className="bookshelf-books">
-					<ol className="books-grid">
-						{this.props.books.map(book => (
-							<li key={book.id}>
-								<Book style={book.style}
-								      title={book.title}
-								      author={book.author}
-						        />
-							</li>
-						))}
-					</ol>
+					<BooksGrid books={this.props.books} />
 				</div>
 			</div>
 		);
