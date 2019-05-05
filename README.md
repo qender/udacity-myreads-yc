@@ -4,6 +4,10 @@ This is the starter template for the final assessment project for Udacity's Reac
 
 Of course, you are free to start this project from scratch if you wish! Just be sure to use [Create React App](https://github.com/facebookincubator/create-react-app) to bootstrap the project.
 
+NOTES: The search from BooksAPI is limited to a particular set of search terms.
+			              You can find these search terms here:
+			              https://github.com/udacity/reactnd-project-myreads-starter/blob/master/SEARCH_TERMS.md
+
 ## TL;DR
 
 To get started developing right away:

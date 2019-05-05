@@ -1,16 +1,17 @@
 import React from 'react';
 import Book from "./Book";
 
-const BooksGrid = (props) => {
+const BooksGrid = props => {
+	const { books, updateBookShelf } = props;
+
 	return (
 		<ol className="books-grid">
-			{props.books.length > 0 && props.books.map(book => (
+			{books.length > 0 && books.map(book => (
 				<li key={book.id}>
-					<Book book={book}
-					      thumbnail={book.imageLinks.thumbnail}
-					      title={book.title}
-					      author={book.author}
-			        />
+					<Book
+						book={book}
+						updateBookShelf={updateBookShelf}
+					/>
 				</li>
 			))}
 		</ol>
